@@ -24,6 +24,8 @@ def run_game():
         gf.check_event(ship,ai_setting,screen, bullets)
         ship.update()
         bullets.update()
+        gf.update_bullet(bullets)
+        print(len(bullets))
         # 每次循环都重新绘制屏幕
         gf.update_screen(ai_setting, screen, ship, bullets)
 
